@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+.delay-5 { animation-delay: 1.5s; }
+.delay-6 { animation-delay: 1.8s; }
+.delay-7 { animation-delay: 2.1s; }
+.delay-8 { animation-delay: 2.4s; }
+.delay-9 { animation-delay: 2.7s; }
+.delay-10 { animation-delay: 3.0s; }
+.delay-11 { animation-delay: 3.3s; }
+.delay-12 { animation-delay: 3.6s; }
+.delay-13 { animation-delay: 3.9s; }
+.delay-14 { animation-delay: 4.2s; }
+.delay-15 { animation-delay: 4.5s; }
+.delay-16 { animation-delay: 4.8s; }
+.delay-17 { animation-delay: 5.1s; }
+.delay-18 { animation-delay: 5.4s; }
+.delay-19 { animation-delay: 5.7s; }
+.delay-20 { animation-delay: 6.0s; }
+
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  background-attachment: fixed;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 12px 16px;
+  font-size: 1rem;
+  background-color: transparent; /* transparan */
+  color: white; /* teks hitam */
+  border: 1px solid black; /* garis tepi hitam */
+  border-radius: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(2px); /* opsional: efek blur di latar belakang */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* efek hover abu tipis */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+  border: 1px solid black;
+  color: #f0f0f0;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #bbb;
+  margin-top: 2rem;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+  color: #333;
+}
+
+.video-section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff4757;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.download-btn:hover {
+  background-color: #ff6b81;
+}
+#bg-image {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
