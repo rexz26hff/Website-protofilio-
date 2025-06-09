@@ -40,10 +40,57 @@
 .delay-19 { animation-delay: 5.7s; }
 .delay-20 { animation-delay: 6.0s; }
 
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #000;
+}
+p1 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: black; /* Ganti dari abu muda ke abu gelap agar terbaca */
+}
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: white; /* Ganti dari abu muda ke abu gelap agar terbaca */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
 body {
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
   background-attachment: fixed;
   color: #f0f0f0;
+}
+thead {
+  background-color: black;
+  color: black;
 }
 
 header {
