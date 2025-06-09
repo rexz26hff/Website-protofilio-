@@ -16,3 +16,6 @@ function pipin() {
 function reva() {
     window.location.href = "reva.html";
 }
+function awal() {
+    window.location.href ="awal.html";
+}
